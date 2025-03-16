@@ -16,8 +16,7 @@ A Streamlit application that helps users improve their CV/resume to better match
 This application uses:
 - **Streamlit**: For the web interface
 - **Amazon Bedrock**: For AI-powered analysis and suggestions
-  - Claude 3 Sonnet: For detailed analysis and suggestions
-  - Claude 3 Haiku (Nova): For quick text extraction and parsing
+  - Amazon Nova Micro: For detailed analysis and suggestions
 - **BeautifulSoup4**: For web scraping job descriptions
 - **PyPDF2**: For parsing PDF resumes
 
