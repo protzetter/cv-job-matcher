@@ -6,7 +6,7 @@ A Streamlit application that helps users improve their CV/resume to better match
 
 - Upload and parse CV/resume in PDF format
 - Scrape job descriptions from URLs or paste them directly
-- Analyze CVs and job descriptions using Amazon Bedrock's Claude models
+- Analyze CVs and job descriptions using Amazon Bedrock's Nova models
 - Generate tailored CV improvement suggestions
 - Identify skills gaps and keyword opportunities
 - Provide formatting and content recommendations
@@ -34,7 +34,7 @@ This application uses:
    ```
 
 3. Configure AWS credentials:
-   - Create a `.env` file based on `.env.example`
+   - Update a `.env` file
    - Set your AWS region and profile
 
 4. Run the Streamlit application:
@@ -45,7 +45,7 @@ This application uses:
 ## AWS Permissions Required
 
 The application requires the following AWS permissions:
-- `bedrock:InvokeModel` for Claude 3 Sonnet and Claude 3 Haiku models
+- `bedrock:InvokeModel` for Nova Micro models
 
 ## Usage
 

@@ -19,8 +19,7 @@ class BedrockAgentManager:
         
         # Model IDs - using Amazon's Nova models
         self.primary_model_id = "us.amazon.nova-micro-v1:0"  # For detailed analysis
-        self.light_model_id = "us.amazon.nova-micro-v1:0"       # For quick extractions
-    
+
     def invoke_model(self, prompt, model_id, max_tokens=4000, temperature=0.7):
         """
         Invoke a model using the Bedrock runtime API.
@@ -101,7 +100,7 @@ class BedrockAgentManager:
         Format the output as a structured JSON.
         """
         
-        response_text = self.invoke_model(prompt=prompt, model_id=self.light_model_id, max_tokens=2000)
+        response_text = self.invoke_model(prompt=prompt, model_id=self.primary_model_id  , max_tokens=2000)
         
         # Try to extract JSON from the response
         try:
@@ -145,7 +144,7 @@ class BedrockAgentManager:
         Format the output as a structured JSON.
         """
         
-        response_text = self.invoke_model(prompt=prompt, model_id=self.light_model_id, max_tokens=2000)
+        response_text = self.invoke_model(prompt=prompt, model_id=self.primary_model_id, max_tokens=2000)
         
         # Try to extract JSON from the response
         try:
