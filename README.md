@@ -1,5 +1,5 @@
 # CV Job Matcher
-
+![](image.png)
 A Streamlit application that helps users improve their CV/resume to better match job descriptions using Amazon Bedrock's AI capabilities.
 
 ## Features
